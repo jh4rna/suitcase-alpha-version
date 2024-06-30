@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#8CCC8E"
+    android:padding="10dp"
+    tools:context=".Signup_Page">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_image"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/suitcaselogo"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#FF000000"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:paddingHorizontal="12dp"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:layout_gravity="center"
+        android:focusableInTouchMode="true"
+        android:layout_marginTop="16dp"
+        >
+
+        <EditText
+            android:id="@+id/txt_signup_email"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="Enter Email"
+            android:textSize="22sp"
+            android:background="@color/white"
+            android:inputType="text"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:paddingHorizontal="12dp"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        app:passwordToggleEnabled="true"
+        >
+
+        <EditText
+            android:id="@+id/txt_signup_Password"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="Enter Password"
+            android:textSize="22sp"
+            android:background="@color/white"
+            android:inputType="text"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:paddingHorizontal="12dp"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        app:passwordToggleEnabled="true"
+        >
+
+        <EditText
+            android:id="@+id/txt_signup_confirmPassword"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="Enter Confirm Password"
+            android:textSize="22sp"
+            android:background="@color/white"
+            android:inputType="text"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/signup_btn"
+        android:layout_width="330dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="26dp"
+        android:backgroundTint="#0AAD0F"
+        android:text="Sign Up"
+        android:layout_gravity="center"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already Have an Account?"
+            android:layout_marginRight="8dp"
+            android:textColor="@color/white"
+            android:textSize="22sp"/>
+
+        <TextView
+            android:id="@+id/txt_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:layout_marginStart="3dp"
+            android:textSize="30sp"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>
